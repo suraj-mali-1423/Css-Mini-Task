@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+.Slide-Bar{
+    width: 70px;
+    height: 100vh;
+    background-color: #202020;
+    transition: width 0.3 ease;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    position: fixed;
+}
+.Slide-Bar:hover{
+    width: 200px;
+}
+.items{
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    border-radius: 30px;
+}
+.items:hover{
+    background-color:#383838;
+}
+.icon{
+    min-width: 45px;
+    height: 20px;
+    text-align: center;
+}
+
+.Text{
+     margin-left: 25px;
+     /* opacity: 0; */
+     transition: opacity 0.3 ease;
+}
+.Slide-Bar:hover .Text{
+      opacity: 1;
+}
